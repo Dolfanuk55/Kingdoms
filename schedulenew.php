@@ -10,11 +10,70 @@ include('inc/header.php');
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-<div class="col-md-1"></div>
-
+      <div class="col-md-1"><p>Monday</p></div>
+      <div class="col-md-1"><p>Tuesday</p></div>
+      <div class="col-md-1"><p>Wednesday</p></div>
+      <div class="col-md-1"><p>Thursday</p></div>
+      <div class="col-md-1"><p>Friday</p></div>
+      <div class="col-md-1"><p>Saturday</p></div>
+      <div class="col-md-1"><p>Sunday</p></div>
     </div>
   </div>
-
+  <div class="row">
+    <div class="col-md-12">
+      <div class="col-md-1"><p>1</p></div>
+      <div class="col-md-1"><p>2</p></div>
+      <div class="col-md-1"><p>3</p></div>
+      <div class="col-md-1"><p>4</p></div>
+      <div class="col-md-1"><p>5</p></div>
+      <div class="col-md-1"><p>6</p></div>
+      <div class="col-md-1"><p>7</p></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="col-md-1"><p>8</p></div>
+      <div class="col-md-1"><p>9</p></div>
+      <div class="col-md-1"><p>10</p></div>
+      <div class="col-md-1"><p>11</p></div>
+      <div class="col-md-1"><p>12</p></div>
+      <div class="col-md-1"><p>13</p></div>
+      <div class="col-md-1"><p>14</p></div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="col-md-1"><p>15</p></div>
+        <div class="col-md-1"><p>16</p></div>
+        <div class="col-md-1"><p>17</p></div>
+        <div class="col-md-1"><p>18</p></div>
+        <div class="col-md-1"><p>19</p></div>
+        <div class="col-md-1"><p>20</p></div>
+        <div class="col-md-1"><p>21</p></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="col-md-1"><p>22</p></div>
+        <div class="col-md-1"><p>23</p></div>
+        <div class="col-md-1"><p>24</p></div>
+        <div class="col-md-1"><p>25</p></div>
+        <div class="col-md-1"><p>26</p></div>
+        <div class="col-md-1"><p>27</p></div>
+        <div class="col-md-1"><p>28</p></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="col-md-1"><p>29</p></div>
+        <div class="col-md-1"><p>30</p></div>
+        <div class="col-md-1"><p>31</p></div>
+        <div class="col-md-1"><p>1</p></div>
+        <div class="col-md-1"><p>2</p></div>
+        <div class="col-md-1"><p>3</p></div>
+        <div class="col-md-1"><p>4</p></div>
+      </div>
+    </div>
+  </div>
   <div class="row">
     <div class="col-md-12">
       <div class="col-md-5">

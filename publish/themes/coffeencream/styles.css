@@ -1,0 +1,322 @@
+/*---------------------------------------------
+  MAIAN WEBLOG v4+
+  Written by David Ian Bennett
+  E-Mail: support@maianscriptworld.co.uk
+  Website: www.maianscriptworld.co.uk
+  This File: CSS file for Coffee n Cream Theme
+  Designed by: Viktor Persson
+  Website: http://templates.arcsin.se
+ ----------------------------------------------*/
+
+/* standard elements */
+* {
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: #963;
+}
+a:hover {
+	color: #C60;
+}
+body {
+	background: #655A46 url('images/bg.gif');
+	background-attachment: fixed;
+	color: #543;
+	font: normal 62.5% "Lucida Sans Unicode", sans-serif;
+}
+input {
+	color: #555;
+	font: normal 1.1em "Lucida Sans Unicode", sans-serif;
+}
+p, cite, code, ul {
+	font-size: 1.2em;
+	padding-bottom: 1.2em;
+}
+h1 {
+	font-size: 1.4em;
+	margin-bottom: 4px;
+}
+
+h1, h2, h3 {
+	color: #654;
+	padding-top: 6px;
+}
+/* misc */
+.clearer {
+	clear: both;
+}
+/* structure */
+.container {
+	background: url('images/bgcontainer.gif') repeat-y;
+	margin: 0 auto;
+	width: 780px;
+}
+/* header */
+.header {
+	background: url('images/bgheader.gif') repeat-x;
+	height: 120px;
+	margin: 0 auto;
+	width: 760px;
+}
+/* title */
+.title {
+	padding: 32px;
+}
+.title h1 {
+	color: #E4DBCF;
+	font: normal 3.4em "Lucida Sans Unicode", "Trebuchet MS", sans-serif;
+}
+/* navigation */
+.navigation {
+	background: #FFF url('images/bgnavigation.gif') repeat-x;
+	font: bold 1.2em Verdana, sans-serif;
+	height: 44px;
+	margin: 0 auto;
+	padding: 0 18px;
+	width: 725px;
+}
+.navigation a {
+	color: #543;
+	text-decoration: none;
+	padding: 3px 4px;
+	margin-right: 12px;
+	line-height: 44px;
+}
+.navigation a:hover {
+	background: #CEBDA1;
+	color: #420;
+}
+#s_navigation {
+	background: #FFF url('images/bgnavigation.gif') repeat-x;
+	font: bold 10px Verdana, sans-serif;
+	height: 44px;
+	margin: -2px auto;
+	padding: 0 18px 0 18px;
+	width: 725px;
+	text-align: center;
+}
+#s_navigation p {
+  padding-top: 9px;
+}
+/* main */
+.main {
+	clear: both;
+	padding: 0 10px 12px 28px;
+}
+/* sub navigation */
+.sidenav {
+	float: right;
+	width: 218px;
+}
+.sidenav h1 {
+	background: #BCB39F url('images/sidenavh1.gif') repeat-x;
+	border-bottom: 1px solid #999;
+	border-top: 1px solid #CCC;
+	color: #4A4A44;
+	font-size: 1.2em;
+	height: 22px;
+	margin: 0;
+	padding-left: 12px;
+}
+.sidenav ul {
+	margin: 0;
+	padding: 0;
+}
+.sidenav li {
+	border-bottom: 1px solid #A98;
+	border-top: 1px solid #DDC;
+	list-style: none;
+}
+.sidenav li a {
+	background: #CCC3AF;
+	color: #554;
+	display: block;
+	padding: 8px 4px 8px 12px;
+	text-decoration: none;
+}
+.sidenav li a:hover {
+	background: #D6CCB9;
+	color: #654;
+}
+/* content */
+.content {
+	padding-top: 12px;
+	float: left;
+	width: 68%;
+}
+.content .descr {
+	color: #987E57;
+	font-size: 1.1em;
+	margin-bottom: 6px;
+}
+/* Other */
+.profile {
+  padding:5px 5px 5px 12px;
+  font-size: 12px;
+  line-height: 30px;
+	color: #665544;
+}
+.profile a {
+  color:#665544;
+  text-decoration: none;
+}
+.profile_image {
+  border:1px solid #949490;
+  padding:1px;
+}
+code.comment_admin {
+  background: #FFF;
+	border: 1px solid #EEE;
+	border-left: 6px solid #ACA492;
+	color: #666;
+	display: block;
+	font: normal 11px "Lucida Sans Unicode", "Trebuchet MS", Verdana,Arial,sans-serif;
+	line-height: 1.6em;
+	margin-bottom: 12px;
+	padding: 8px 10px;
+}
+code.comment_visitor {
+  background: #FFF;
+	border: 1px solid #EEE;
+	border-left: 6px solid #DED4C0;
+	color: #666;
+	display: block;
+	font: normal 11px "Lucida Sans Unicode", "Trebuchet MS", Verdana,Arial,sans-serif;
+	line-height: 1.6em;
+	margin-bottom: 12px;
+	padding: 8px 10px;
+}
+.search_class {
+  border-top: 1px solid #EAEADA;
+  border-bottom: 1px solid #EAEADA;
+  margin-top: 4px;
+  padding: 12px 0px 12px 0px;
+}
+.page_numbers {
+  border-top: 1px solid #EAEADA;
+  border-bottom: 1px solid #EAEADA;
+  margin-top: 7px;
+  background-color: #FCFAEA;
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+}
+.system_message {
+  border: 1px solid #ACA492;
+  margin: 7px 0px 10px 0px;
+  background-color: #FCFAEA;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 0px 10px 0px;
+}
+#bookmarks {
+  margin: 15px 5px 10px 2px;
+  text-align: left;
+  font-size: 1.2em;
+}
+.bookmark_img {
+  padding:5px;
+  margin:1px;
+  border: 1px solid #ACA492;
+}
+
+/* form */
+form {
+	margin: 2px 0px 2px 0px;
+	padding: 0px;
+}
+.form_area {
+  padding:10px;
+}
+label {
+	display: block;
+	font-weight: bold;
+	margin: 1px 0;
+}
+input {
+	padding: 5px;
+	border: 1px solid #ACA492;
+	font: normal 1em "Lucida Sans Unicode", "Trebuchet MS", Verdana,Arial,sans-serif;
+	color: #ACA492;
+}
+input.searchbox {
+  width:20%;
+  padding:3px;
+  height: 15px;
+  font-size: 11px;
+  border:1px solid #6A5E48;
+}
+input.codebox {
+	width: 20%;
+}
+textarea {
+	width: 400px;
+	padding: 5px;
+	font: normal 1em "Lucida Sans Unicode", "Trebuchet MS", Verdana,Arial,sans-serif;
+	border: 1px solid #ACA492;
+	height: 100px;
+	display: block;
+	color: #ACA492;
+}
+input.button {
+	background-color: #ACA492;
+	border: solid 1px #877B5C;
+	font-weight: bold;
+	padding: 0.25em;
+	font-size: 1.0em;
+	color: #F2F2C5;
+	vertical-align: middle;
+}
+input.search_button {
+  border:0;
+  color: #555533;
+  background-color: #F7F7F2;
+	border: solid 1px #181D21;
+	padding:1px;
+	font-size: 12px;
+}
+.friend_textarea {
+	height: 50px;
+	width: 80%;
+}
+#friend {
+  padding: 10px;
+  font-family: "Lucida Sans Unicode", "Trebuchet MS", Verdana,Arial,sans-serif;
+  background-color:#FCFAEA;
+  color: #554433;
+	font-size: 9px;
+}
+/* footer */
+.footer {
+	background: #958463 url('images/bgfooter.gif') repeat-x;
+	color: #FED;
+	font-size: 1.1em;
+	line-height: 40px;
+	margin: 0 auto;
+	text-align: center;
+	width: 760px;
+}
+.footer a {
+	color: #FFD;
+	text-decoration: none;
+}
+.footer a:hover {
+	color: #FFF;
+	text-decoration: underline;
+}
+.footer .left, .footer .right {
+	padding: 0 12px;
+}
+/* floats */
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.clearer {
+	clear: both;
+}
+.error {
+	color: #877B5C;
+}

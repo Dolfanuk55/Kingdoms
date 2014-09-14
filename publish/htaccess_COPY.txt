@@ -1,0 +1,28 @@
+#####################
+#PREVENT viewing of .htaccess file
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+# Set the default handler
+DirectoryIndex index.php
+
+# Follow symbolic links in this directory
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule ^(profile|contact|all-archive|rss-feed).html$ index.php?cmd=$1
+RewriteRule ^index.html$ index.php
+RewriteRule ^print_(.*)\.html$ index.php?cmd=print&blog=$1
+RewriteRule ^friend_(.*)\.html$ index.php?cmd=tell-a-friend&blog=$1
+RewriteRule ^blog/(.*)/(.*)/archive.html$ index.php?cmd=archive&month=$1&year=$2
+RewriteRule ^blog/(.*)/(.*).html$ index.php?cmd=blog&post=$1
+
+# URL rewrite rules
+<IfModule mod_rewrite.c>
+   RewriteEngine On
+   RewriteCond %{REQUEST_FILENAME} !-f
+   RewriteCond %{REQUEST_FILENAME} !-d
+   RewriteCond %{REQUEST_FILENAME} !-l
+   RewriteRule ^(.*)$ index.php [QSA,L]
+</IfModule>

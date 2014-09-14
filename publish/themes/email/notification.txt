@@ -1,0 +1,25 @@
+Weblog Comment Notification
+===========================
+
+Hi,
+
+A visitor to your website has left a comment for the following blog:
+
+------------------------------------------------------------
+{BLOGTITLE}
+{BLOGURL}
+------------------------------------------------------------
+
+Name: {VISITOR}
+E-Mail: {EMAIL}
+Date Posted: {DATE}
+Comments:
+
+{COMMENTS}
+
+----------------------------
+
+To post a reply to, edit or delete this comment, log in to your admin area:
+{SITEPATH}/admin/index.php
+
+(Visitors IP Logged As: {IP})

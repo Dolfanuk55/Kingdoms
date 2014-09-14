@@ -1,0 +1,112 @@
+body {
+	background-color: #F0F6FF;
+	background-image: url('images/bg.png');
+	margin: 1px;
+	padding: 1px;
+}
+a:link {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: none;
+}
+a:visited {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: none;
+}
+a:active {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: none;
+}
+a:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	text-decoration: underline;
+}
+td {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	background-color: inherit;
+}
+.wrapperTable {
+  background-color:#FFFFFF;
+  border-top:1px solid #164677;
+}
+.detailsHeader {
+  padding:5px;
+  background-color:#164677;
+  color:#FFFFFF;
+  border-bottom:1px solid #000000;
+}
+.details {
+  padding:5px;
+  background-color:#F0F6FF
+}
+.tbBorder {
+  border: 1px solid #000000;
+}
+.completed {
+  padding:5px;
+  color: #FFFFFF; 
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 20px; 
+  font-weight: bold;
+  background-color:#164677;
+}
+.heading_text {
+	padding:5px;
+  border-bottom:1px solid #000000;
+  background-color:#164677;
+  color:#FFFFFF;
+}
+.logotablebg {
+	background-color: #F0F6FF;
+	border: 1px solid #164677;
+}
+.install_img {
+  background-color:#F0F6FF;
+  border-color:#64798E;
+  padding:2px
+}
+img {
+	border-color: #64798E;
+}
+.copyright, .copyright a:link, .copyright a:visited, .copyright a:active, .copyright a:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+}
+.formbutton {
+  padding: 3px;
+  font-size: 11px;
+	font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	border: 1px solid #164677;
+	color: #164677;
+	background-color: #F0F6FF;
+}
+.error {
+	color: #64798E;
+}
+fieldset {
+	border: 1px solid #64798E;
+	width: 720px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+legend {
+	color: #FFFFFF;
+	background: #164677;
+	background-image: url('images/menu_table_grad.gif');
+	background-position: top;
+	background-repeat: repeat-x;
+	border: 1px solid #000000;
+	padding: 5px 20px;
+	font-weight: bold
+}

@@ -1,0 +1,241 @@
+/*---------------------------------------------  
+  MAIAN WEBLOG v4+  
+  Written by David Ian Bennett  
+  E-Mail: support@maianscriptworld.co.uk  
+  Website: www.maianscriptworld.co.uk  
+  This File: CSS file for Contaminated Theme  
+  Designed By: Viktor Persson
+  Website: http://templates.arcsin.se
+----------------------------------------------*/
+
+/* standard elements */
+html {
+	min-height: 100%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: #FF3;
+}
+a:hover {
+	color: #AA3;
+}
+body {
+	background: #111 url('images/bg.jpg') repeat-x;
+	color: #DDD;
+	font: normal 62.5% "Trebuchet MS", Verdana, sans-serif;
+}
+p, code, ul {
+	padding-bottom: 1.2em;
+}
+h1 {
+	font: normal 1.8em Tahoma, sans-serif;
+	margin-bottom: 4px;
+}
+h2 {
+	background: url('images/stripes.gif') repeat-x left bottom;
+	color: #CCC;
+	font: normal 2em Impact, sans-serif;
+	margin-bottom: 8px;
+	padding-bottom: 11px;
+	letter-spacing: 1px;
+}
+h1, h2 {
+	padding-top: 6px;
+}
+/* misc */
+.clearer {
+	clear: both;
+	font-size: 0;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+/* blockquote */
+blockquote.comment_admin {
+	margin: 20px 0px 20px 0px;
+	padding: 10px 20px 0px 20px;
+	border-left: 5px solid #99AA33;
+}
+blockquote.comment_visitor {
+	margin: 20px 0px 20px 0px;
+	padding: 10px 20px 0px 20px;
+	border-left: 5px solid #DDDDDD;
+}
+/* structure */
+.wrapper {
+	font-size: 1.3em;
+	margin: 0 auto;
+	width: 780px;
+}
+.container {
+	background: url('images/header.gif') no-repeat center top;
+}
+/* title */
+.title {
+	font: normal 3em Tahoma, sans-serif;
+	text-decoration: line-through;
+}
+.olive {
+	color: #CCA;
+}
+/* blockquote */
+blockquote {
+	margin: 20px 0px 20px 0px;
+	padding: 10px 20px 0px 20px;
+	border-left: 8px solid;
+	font-weight:normal;
+}
+/* sub navigation */
+.sidenav {
+	background: url('images/sidenav.gif') no-repeat right top;
+	padding-top: 126px;
+	float: right;
+	width: 210px;
+}
+.sidenav h2 {
+	color: #9A3;
+	font-size: 1.4em;
+	line-height: 30px;
+	margin: 0;
+}
+.sidenav ul {
+	padding: 0.5em 0 0 0.5em;
+}
+.sidenav li {
+	list-style: none;
+}
+.sidenav li a {
+	font-size: 1.1em;
+	line-height: 1.5em;
+	color: #777;
+	text-decoration: none;
+}
+.sidenav li a:hover {
+	color: #8DCA3F;
+}
+/* content */
+.content {
+	float: left;
+	margin: 10px 0;
+	padding-top: 32px;
+	width: 531px;
+}
+.content .descr {
+	color: #8DC63F;
+	margin-bottom: 6px;
+}
+.content li {
+	margin-left: 18px;
+}
+/* Other */
+#bookmarks {
+  margin: 15px 5px 10px 2px;
+  text-align: left;
+}
+.bookmark_img {
+  padding:5px;
+  margin:1px;
+  border: 1px solid #DDDDDD;
+}
+.system_message {
+  border-top: 1px solid #778844;
+  border-bottom: 1px solid #778844;
+  margin: 10px 0px 10px 0px;
+  background-color: #111111;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 0px 10px 0px;
+}
+.search_class {
+  border-left: 2px solid #778844;
+  margin-top: 4px;
+  padding: 6px 0px 6px 5px;
+  background-color: #111111;
+}
+.page_numbers {
+  border-top: 1px solid #778844;
+  border-bottom: 1px solid #778844;
+  margin-top: 7px;
+  display:block;
+  background-color: #111111;
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+}
+.profile_image {
+  border: 1px solid #CCCCAA;
+  padding: 1px;
+}
+
+/* form */
+label {
+	display: block;
+	font-weight: bold;
+	margin: 1px 0;
+}
+input {
+	padding: 5px;
+	border: 1px solid #BEBEBE;
+	font: normal 1em Verdana, Arial, Sans-serif;
+	color: #CCCCAA;
+	background-color: #111111;
+}
+input.codebox {
+	width: 20%;
+}
+input.searchbox {
+	width: 60%;
+}
+p.search_area {
+  padding:0;
+  margin-top:8px;
+}
+textarea {
+	width: 400px;
+	padding: 5px;
+	font: normal 1em Verdana, Arial, Sans-serif;
+	border: 1px solid #BEBEBE;
+	height: 100px;
+	display: block;
+	color: #CCCCAA;
+	background-color: #111111;
+}
+input.button {
+	background-color: #111111;
+	border: solid 1px #BEBEBE;
+	font-weight: bold;
+	padding: 0.25em;
+	font-size: 12px;
+	color: #CCCCAA;
+	vertical-align: middle;
+}
+.friend_textarea {
+	height: 50px;
+	width: 80%;
+}
+#friend {
+  padding:5px;
+  background-color:#111111;
+  font: normal 12px "Trebuchet MS", Verdana, sans-serif;
+}
+
+/* footer */
+.footer {
+	border-top: 1px dashed #333;
+	color: #777;
+	font: normal 0.9em sans-serif;
+	padding: 10px 0 16px;
+}
+.footer a {
+	color: #784;
+	text-decoration: none;
+}
+/* error */
+.error {
+	color: #99AA33;
+}

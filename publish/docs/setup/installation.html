@@ -1,0 +1,381 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Maian Weblog v4.0 Documentation (Installation)</title>
+<link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<table width="760" border="0" cellpadding="0" cellspacing="1" align="center" class="logotablebg">
+<tr>
+    <td>
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
+    <tr>
+        <td align="center" valign="top"><img src="images/logo.gif" alt="Maian Weblog v4.0 Documentation" title="Maian Weblog v4.0 Documentation"></td>
+    </tr>
+    </table>
+    <table width="100%" border="0" cellpadding="0" cellspacing="1" align="center">
+    <tr>
+       <td class="headingtablebg" width="15%" align="center"><b>- <a href="index.html" title="Home">HOME</a> -</b><td>
+       <td class="headingtablebg" width="25%" align="center"><b>- <a href="installation.html" title="Installation">INSTALLATION</a> -</b><td>
+       <td class="headingtablebg" width="23%" align="center"><b>- <a href="upgrade.html" title="Upgrade">UPGRADE</a> -</b><td>
+       <td class="headingtablebg" width="15%" align="center"><b>- <a href="faq.html" title="F.A.Q">F.A.Q</a> -</b><td>
+       <td class="headingtablebg" width="22%" align="center"><b>- <a href="scriptinfo.html" title="Script Info">SCRIPT INFO</a> -</b><td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table> 
+<table width="765" border="0" cellpadding="0" cellspacing="0" align="center" style="margin-top:3px">
+<tr>
+    <td>
+    <table width="100%" border="0" cellpadding="0" cellspacing="1" align="center" style="background-color:#FFFFFF;border:1px solid #164677;">
+    <tr>
+        <td align="left" class="menutable" valign="top" style="padding:5px">&raquo; <b>INSTALLATION:</b></td>
+    </tr>
+    <tr>
+        <td align="left" valign="top" style="padding:10px;border-top:1px solid #164677">Please read the following installation instructions carefully:</td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table>
+<table width="765" border="0" cellpadding="0" cellspacing="0" align="center" style="margin-top:3px">
+<tr>
+    <td>
+    <table width="100%" border="0" cellpadding="0" cellspacing="1" align="center" style="background-color:#FFFFFF;border:1px solid #164677;">
+    <tr>
+        <td align="left" class="menutable" valign="top" style="padding:5px">&raquo; <b>REQUIREMENTS:</b></td>
+    </tr>
+    <tr>
+        <td align="left" valign="top" style="padding:10px;border-top:1px solid #164677">
+        &#8226; A server running <span style="color:#164677;font-weight:bold">PHP v4.3</span> or higher. Some of the syntax will <b>NOT</b> work on earlier versions.<br>
+        &#8226; A <span style="color:#164677;font-weight:bold">MySQL</span> database to hold the script tables.<br>
+        &#8226; <a href="http://uk2.php.net/gd" target="_blank"><span style="color:#164677;font-weight:bold"><u>GD Library</u></span></a> with <span style="color:#164677;font-weight:bold">Freetype</span> support for captcha code display. To find out how to check if you have this installed, see the F.A.Q page.<br>
+        &#8226; Support for <span style="color:#164677;font-weight:bold">'.htaccess'</span> if you wish to enable the search engine friendly urls.<br>
+        &#8226; For Spaw Editor: IE5.5+, Opera 9+ or Gecko Browser with build date higher than 12th March 2003.
+        </td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table>
+<table width="765" border="0" cellpadding="0" cellspacing="0" align="center" style="margin-top:3px">
+<tr>
+    <td>
+    <table width="100%" border="0" cellpadding="0" cellspacing="1" align="center" style="background-color:#FFFFFF;border:1px solid #164677;">
+    <tr>
+        <td align="left" class="menutable" valign="top" style="padding:5px">&raquo; <b>SETUP (AUTO INSTALL):</b></td>
+    </tr>
+    <tr>
+        <td align="left" valign="top" colspan="2" style="padding:10px;border-top:1px solid #164677">
+        <b>1</b> =&gt; Create a database to hold the script tables. If you are unsure of this procedure contact your web hosting company.<br><br>
+        <b>2</b> =&gt; Open up the <span style="color:#164677;font-weight:bold">'inc/db_connection.inc.php'</span> file in a text editor and edit it to point to the database you just created. <b>DO NOT</b> comment out the prefix function. If you don`t need to change it leave it as it is. You MUST also specify a cookie name and a secret key. DO NOT use the defaults!!<br><br>
+        <b>3</b> =&gt; Open up the <span style="color:#164677;font-weight:bold">'admin/inc/password.inc.php'</span> file in a text editor and set a username and password.<br><br>
+        <b>4</b> =&gt; Upload all the files/folders into a directory on your web server. Example: /weblog/ <b>Don`t name the directory 'blog'.</b><br><br>
+        <b>5</b> =&gt; Chmod the following files and folders to make them world writeable. ie: 777 or 755<br><br>
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border:1px solid #64798E;background-color:#F0F6FF">
+        <tr>
+            <td align="left" style="padding:5px">
+            uploads/<br>
+            uploads/flash/<br>
+            uploads/images/</td>
+        </tr>
+        </table><br>
+        <b>6</b> =&gt; Access the <span style="color:#164677;font-weight:bold">'install/index.php'</span> file in your browser and follow the set up instructions to complete installation.<br><br>
+        <b>7</b> =&gt; If the setup was successful log in to your admin area (see script usage below) and select <span style="color:#164677;font-weight:bold">'Settings'</span> from the drop down menu. Update the settings to your own preferences.<br><br>
+        <b>8</b> =&gt; If you enable the <acronym title="What You See Is What You Get">WYSIWYG</acronym> editor and are using the system under <acronym title="Internet Information Services">IIS</acronym>, you may need to make some changes to the config file for the Spaw Editor. For more information, view the 
+        <span style="color:#164677;font-weight:bold">'admin/spaw/config/config.php'</span> file. If you still have problems, disable the <acronym title="What You See Is What You Get">WYSIWYG</acronym> editor.<br><br>
+        <b>9</b> =&gt; Thats it, all done. For script usage, see below.<br><br>
+        <b>SECURITY NOTE</b>: For extra security you should rename your 'admin' folder to something unique!!</td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table>
+<table width="765" border="0" cellpadding="0" cellspacing="0" align="center" style="margin-top:3px">
+<tr>
+    <td>
+    <table width="100%" border="0" cellpadding="0" cellspacing="1" align="center" style="background-color:#FFFFFF;border:1px solid #164677;">
+    <tr>
+        <td align="left" class="menutable" valign="top" style="padding:5px">&raquo; <b>SETUP (MANUAL):</b></td>
+    </tr>
+    <tr>
+        <td align="left" valign="top" colspan="2" style="padding:10px;border-top:1px solid #164677">
+        If the auto install failed, you should first delete any tables in your database that might have been created by the system before you proceed.<br><br>
+        <b>1</b> =&gt; Create a database to hold the script tables. If you are unsure of this procedure contact your web hosting company.<br><br>
+        <b>2</b> =&gt; Open up the <span style="color:#164677;font-weight:bold">'inc/db_connection.inc.php'</span> file in a text editor and edit it to point to the database you just created. <b>DO NOT</b> comment out the prefix function. If you don`t need to change it leave it as it is.<br><br>
+        <b>3</b> =&gt; Open up the <span style="color:#164677;font-weight:bold">'admin/inc/password.inc.php'</span> file in a text editor and set a username and password.<br><br>
+        <b>4</b> =&gt; Upload all the files/folders into a directory on your web server. Example: /weblog/ <b>Don`t name the directory 'blog'.</b><br><br>
+        <b>5</b> =&gt; Chmod the following files and folders to make them world writeable. ie: 777 or 755<br><br>
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border:1px solid #64798E;background-color:#F0F6FF">
+        <tr>
+            <td align="left" style="padding:5px">
+            uploads/<br>
+            uploads/flash/<br>
+            uploads/images/</td>
+        </tr>
+        </table><br>
+        <b>6</b> =&gt; Access the database you created earlier, then browse for and run the <span style="color:#164677;font-weight:bold">'docs/schematic/tables.sql'</span> file to set up the script tables.<br><br>
+        <b>7</b> =&gt; If the setup was successful log in to your admin area (see script usage below) and select <span style="color:#164677;font-weight:bold">'Settings'</span> from the drop down menu. Update the settings to your own preferences.<br><br>
+        <b>8</b> =&gt; If you enable the <acronym title="What You See Is What You Get">WYSIWYG</acronym> editor and are using the system under <acronym title="Internet Information Services">IIS</acronym>, you may need to make some changes to the config file for the Spaw Editor. For more information, view the 
+        <span style="color:#164677;font-weight:bold">'admin/spaw/config/config.php'</span> file. If you still have problems, disable the <acronym title="What You See Is What You Get">WYSIWYG</acronym> editor.<br><br>
+        <b>9</b> =&gt; Thats it, all done. For script usage, see below.<br><br>
+        <b>SECURITY NOTE</b>: For extra security you should rename your 'admin' folder to something unique!!</td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table>
+<table width="765" border="0" cellpadding="0" cellspacing="0" align="center" style="margin-top:3px">
+<tr>
+    <td>
+    <table width="100%" border="0" cellpadding="0" cellspacing="1" align="center" style="background-color:#FFFFFF;border:1px solid #164677;">
+    <tr>
+        <td align="left" class="menutable" valign="top" style="padding:5px">&raquo; <b>SCRIPT USAGE:</b></td>
+    </tr>
+    <tr>
+        <td align="left" valign="top" style="padding:10px;border-top:1px solid #164677">
+        Once you have updated your settings, use the links to add new blogs. Enable the <acronym title="What You See Is What You Get">WYSIWYG</acronym> editor for easier HTML editing if you aren`t
+        very HTML savvy. HTML may be used in the blogs but note that some HTML may break the XHMTL validation.<br><br>
+        Hopefully the system should be self explanatory, but if you have any problems, post on the support forum.
+        </td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table>
+<table width="765" border="0" cellpadding="0" cellspacing="0" align="center" style="margin-top:3px">
+<tr>
+    <td>
+    <table width="100%" border="0" cellpadding="0" cellspacing="1" align="center" style="background-color:#FFFFFF;border:1px solid #164677;">
+    <tr>
+        <td align="left" class="menutable" valign="top" style="padding:5px;border-bottom:1px solid #164677;">&raquo; <b>TEMPLATES/CSS:</b></td>
+    </tr>
+    <tr>
+        <td align="left" valign="top" style="padding:10px;border-top:1px solid #164677">
+        The templates for the script are in <span style="color:#164677;font-weight:bold">'themes/*theme'</span> directory.<br><br>
+        Edit using a text editor, then re-upload. You must be careful NOT to remove any of the code between the PHP tags in the <b>.tpl.php</b> files, as some of these are important to the script. Others
+        simply display language data. Unless you are an advanced user it is recommended you leave them all in place.<br><br>
+   
+        PHP and/or HTML may be used in the <b>.tpl.php</b> templates.<br><br>
+        
+        The templates in the <span style="color:#164677;font-weight:bold">'themes/*theme/tpl_files/'</span> folder are <b>.tpl</b> templates and can only include HTML or the system tags. These templates are to make the system easier to edit. More info in the following file:<br><br> 
+        
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border:1px solid #64798E;background-color:#F0F6FF">
+        <tr>
+            <td align="left" style="padding:5px">- themes/*theme/README.txt</td>
+        </tr>
+        </table><br>
+        
+        The e-mail templates are in the <span style="color:#164677;font-weight:bold">'themes/email/'</span> directory. Edit using a text editor if necessary, then re-upload. 
+        For a list of user variables, see the following file:<br><br>
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border:1px solid #64798E;background-color:#F0F6FF">
+        <tr>
+            <td align="left" style="padding:5px">- themes/email/README.txt</td>
+        </tr>
+        </table><br>
+        The blog system is controlled via a stylesheet. This controls all display elements. There are 4 stylesheets for the system. The admin CSS files will
+        will probably not need changing. The RSS stylesheet may not actually do anything in newer browsers.<br><br>
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border:1px solid #64798E;background-color:#F0F6FF">
+        <tr>
+            <td align="left" style="padding:5px">
+            - admin/css/css.css <i>(Admin display)</i><br>
+            - admin/css/menu.css <i>(Omni slide menu)</i><br>
+            - themes/*theme/styles.css <i>(Main public display control)</i><br>
+            - themes/*theme/rss_style.css <i>(RSS formatting. Not used by some browsers.)</i>
+            </td>
+        </tr>
+        </table><br>
+        So that you can revert back to the default template, we recommend you create a new theme when editing. This will enable you to
+        refer to the original for reference. Please see below for info on creating themes.<br><br>
+        All language for the script is in the following files:<br><br>
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border:1px solid #64798E;background-color:#F0F6FF">
+        <tr>
+            <td align="left" style="padding:5px">
+            - lang/english.php (Blog System)<br>
+            - admin/spaw/plugins/core/lib/lang/en.lang.inc.php (Spaw Editor)
+            </td>
+        </tr>
+        </table><br>
+        To change the language for the Spaw Editor, see below.
+        </td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table>
+<table width="765" border="0" cellpadding="0" cellspacing="0" align="center" style="margin-top:3px">
+<tr>
+    <td>
+    <table width="100%" border="0" cellpadding="0" cellspacing="1" align="center" style="background-color:#FFFFFF;border:1px solid #164677;">
+    <tr>
+        <td align="left" class="menutable" valign="top" style="padding:5px">&raquo; <b>THEMES:</b></td>
+    </tr>
+    <tr>
+        <td align="left" valign="top" style="padding:10px;border-top:1px solid #164677">
+        v4+ of Maian Weblog introduces a theme based layout. Themes are in the <span style="color:#164677;font-weight:bold">'/themes/'</span> directory. When editing the system
+        we recommend you create a new theme and edit the new theme only. If you have problems you can always revert back
+        to the default <span style="color:#164677;font-weight:bold">'standard'</span> theme or use this theme as a reference when editing.<br><br>
+        <b>How to create a new theme:</b><br><br>
+        The easiest way to create a new theme is to first make a copy of the standard theme. So, create a new directory in the
+        <span style="color:#164677;font-weight:bold">'themes'</span> directory (ie: 'theme2') and then copy and paste the contents of the 'standard' theme into this new dir. When you have done this
+        go to your settings and select your new theme from the list. New themes automatically appear in the drop down list when you add new directories
+        to the <span style="color:#164677;font-weight:bold">'themes'</span> folder. After you have selected the new theme, edit the files in a text editor. You may find that creating a mock layout first makes for easier editing. Once you have
+        your design, you can integrate it into Maian Weblog.<br><br>Please read the <span style="color:#164677;font-weight:bold">'themes/*theme/README.txt'</span> file
+        for important path information.<br><br>
+        For a list of required templates, see the <span style="color:#164677;font-weight:bold">'docs/templates_list.txt'</span> file.<br><br>
+        To enable template checking, enable the following variable (set to 1) in the 'index.php' file:<br><br>
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border:1px solid #64798E;background-color:#F0F6FF">
+        <tr>
+            <td align="left" style="padding:5px">define('CHECK_TEMPLATES', 0);</td>
+        </tr>
+        </table><br>
+        This should be set back to 0 when you are happy with your edits. Note that if you disable template checking you might see errors
+        if the templates are missing. It is recommended you keep this enabled while creating your theme.<br><br>
+        Note that if you do not require any of the templates, create a blank file. This will act as a placeholder and prevent the system from displaying a template rendering error. The system checks all templates are in place when it loads.<br><br>
+        If you would like to submit your theme to me for inclusion in the system for other people to use, please contact me through the website. Thank you.
+        </td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table>
+<table width="765" border="0" cellpadding="0" cellspacing="0" align="center" style="margin-top:3px">
+<tr>
+    <td>
+    <table width="100%" border="0" cellpadding="0" cellspacing="1" align="center" style="background-color:#FFFFFF;border:1px solid #164677;">
+    <tr>
+        <td align="left" class="menutable" valign="top" style="padding:5px">&raquo; <b>CAPTCHA SETTINGS:</b></td>
+    </tr>
+    <tr>
+        <td align="left" valign="top" style="padding:10px;border-top:1px solid #164677">For spam prevention, this script utilises a Captcha class to generate a random image on the tell a friend,contact & comments pages.<br><br>
+        For most people the default options will be fine. however if you wish, you can adjust the captcha settings. To alter the captcha settings, please open the following file
+        in your text editor:<br><br>
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border:1px solid #64798E;background-color:#F0F6FF">
+        <tr>
+            <td align="left" style="padding:5px">- classes/php-captcha.inc.php</td>
+        </tr>
+        </table><br>
+        Descriptions of each option are shown. Once you have made any changes, save and re-upload this file. Here are a couple of examples:<br><br>
+        <b>Changing how many coloured lines are displayed:</b><br><br>
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border:1px solid #64798E;background-color:#F0F6FF">
+        <tr>
+            <td align="left" style="padding:5px">
+            Open the captcha class in a text editor. Find the following line in the config options:<br><br>
+            define('CAPTCHA_NUM_LINES', 40);<br><br>
+            Increase the 40 for more lines, decrease for less. 0 would be a blank background. Save and re-upload captcha class.
+            </td>
+        </tr>
+        </table><br>
+        <b>Adding new fonts</b><br><br>
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border:1px solid #64798E;background-color:#F0F6FF">
+        <tr>
+            <td align="left" style="padding:5px">
+            Fonts MUST be True-Type Fonts (.ttf). Upload new fonts into the 'classes/fonts/' directory.<br><br>
+            Open the captcha class and find the following:<br><br>
+            $aFonts = array('classes/fonts/arial.ttf','classes/fonts/verdana.ttf'),<br><br>
+            Add new fonts to array:<br><br>
+            $aFonts = array('classes/fonts/helvetica.ttf','classes/fonts/arial.ttf','classes/fonts/verdana.ttf'),<br><br>
+            Save and re-upload captcha class.
+            </td>
+        </tr>
+        </table>
+        </td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table>
+<table width="765" border="0" cellpadding="0" cellspacing="0" align="center" style="margin-top:3px">
+<tr>
+    <td>
+    <table width="100%" border="0" cellpadding="0" cellspacing="1" align="center" style="background-color:#FFFFFF;border:1px solid #164677;">
+    <tr>
+        <td align="left" class="menutable" valign="top" style="padding:5px">&raquo; <b>SPAW EDITOR (WYSIWYG):</b></td>
+    </tr>
+    <tr>
+        <td align="left" valign="top" colspan="2" style="padding:10px;border-top:1px solid #164677">
+        If enabled in your settings, the <acronym title="What You See Is What You Get">WYSIWYG</acronym> editor will enable you to easily add certain kinds of formatting to your blog. ie, text underlining, bold text, italics etc<br><br>
+        To get a better idea of how this works, view the small tutorials in your admin area by clicking the links on the <span style="color:#164677;font-weight:bold">'Add New Blog'</span> page. If you still 
+        don`t understand how it works, it might be best to revert to a standard text area for adding/editing blogs until you get
+        more familiar with the system.<br><br>
+        Maian Weblog uses the <a href="http://www.solmetra.com/en/disp.php/en_products/en_spaw/en_spaw_intro" title="Spaw Editor v2" target="_blank"><u>Spaw Editor v2</u></a>.<br><br>
+        Spaw Editor supports a number of different languages. To change your language, firstly, see if your language is available in the following directory:<br><br>
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border:1px solid #64798E;background-color:#F0F6FF">
+        <tr>
+            <td align="left" style="padding:5px">
+            - admin/spaw/plugins/core/lib/lang/
+            </td>
+        </tr>
+        </table><br>
+        If it is, specify this language file in the Spaw Editor config file.<br><br>
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border:1px solid #64798E;background-color:#F0F6FF">
+        <tr>
+            <td align="left" style="padding:5px">
+            - admin/spaw/config/config.php
+            </td>
+        </tr>
+        </table><br>
+        Add the language to the following variable, save and re-upload:<br><br>
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border:1px solid #64798E;background-color:#F0F6FF">
+        <tr>
+            <td align="left" style="padding:5px">
+            SpawConfig::setStaticConfigItem('default_lang','en');
+            </td>
+        </tr>
+        </table><br>
+        NOTE that you only need specify the code before .lang.inc.php So, for example, to set the language file for French (fr.lang.inc.php), you would use:<br><br>
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border:1px solid #64798E;background-color:#F0F6FF">
+        <tr>
+            <td align="left" style="padding:5px">
+            SpawConfig::setStaticConfigItem('default_lang','fr');
+            </td>
+        </tr>
+        </table>
+        </td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table>
+<table width="765" border="0" cellpadding="0" cellspacing="0" align="center" style="margin-top:3px">
+<tr>
+    <td>
+    <table width="100%" border="0" cellpadding="0" cellspacing="1" align="center" style="background-color:#FFFFFF;border:1px solid #164677;">
+    <tr>
+        <td align="left" class="menutable" valign="top" style="padding:5px">&raquo; <b>SEARCH ENGINE FRIENDLY URLS WITH .HTACCESS:</b></td>
+    </tr>
+    <tr>
+        <td align="left" valign="top" colspan="2" style="padding:10px;border-top:1px solid #164677">
+        If you are using an Apache server, you can enable the option in your settings for the search engine friendly urls.<br><br>
+        <b>Standard Url Examples</b><br><br>
+        index.php?cmd=blog&amp;blog=1<br>
+        index.php?cmd=archive&amp;month=03&amp;year=<script type="text/javascript">var d = new Date(); document.write(d.getFullYear());</script><br><br>
+        <b>Search Engine Friendly Url Examples</b><br><br>
+        blog/1/this-is-my-blog.html<br>
+        blog/03/2007/archive.html<br><br>
+        <span style="color:red;font-weight:bold">IMPORTANT!</span>: Your server MUST support .htaccess for this function to work. If it doesn`t, you may see '500 Internal Server Error' messages.<br /><br />
+        To enable this feature rename the <b>'htaccess_COPY.txt'</b> file to <b>.htaccess</b>. You can do this in your control panel or ftp program. Then enable the option in your settings.
+        </td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table>
+<table width="765" border="0" cellpadding="0" cellspacing="1" align="center" style="margin-top:3px">
+<tr>
+    <td>
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="background-color:#FFFFFF;border:1px solid #164677;">
+    <tr>
+        <td align="right" valign="top" style="padding:10px;">
+        <span class="copyright">Powered by <a href="http://www.maianweblog.com/" target="_blank" title="Maian Weblog v4.0">Maian Weblog v4.0</a><br>&copy; 2003-<script type="text/javascript">var d = new Date(); document.write(d.getFullYear());</script> Maian Script World. All Rights Reserved</span></td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table>
+</body>
+</html>

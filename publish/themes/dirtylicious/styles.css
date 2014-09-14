@@ -1,0 +1,331 @@
+/*---------------------------------------------
+  MAIAN WEBLOG v4+
+  Written by David Ian Bennett
+  E-Mail: support@maianscriptworld.co.uk
+  Website: www.maianscriptworld.co.uk
+  This File: CSS file for Dirtylicious Theme
+  Designed by: Viktor Persson
+  Website: http://templates.arcsin.se
+ ----------------------------------------------*/
+
+/* standard elements */
+html {
+	min-height: 100%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: #048;
+}
+a:hover {
+	color: #06C;
+}
+body {
+	background: #E7E7E2 url('images/body.jpg') no-repeat center top;
+	background-attachment: fixed;
+	color: #444;
+	font: normal 62.5% Tahoma, Verdana, sans-serif;
+	padding-top: 20px;
+}
+.body {
+  padding-top:0;
+}
+p, code, ul {
+	padding-bottom: 1.2em;
+}
+li {
+	list-style: none;
+}
+h1 {
+	font: normal 1.8em Tahoma, Verdana, sans-serif;
+}
+h2 {
+	font: bold 1.4em sans-serif;
+}
+h3 {
+	font: bold 1em Tahoma, Verdana, sans-serif;
+}
+h1, h2, h3 {
+	padding-top: 6px;
+	color: #553;
+	margin-bottom: 4px;
+}
+/* misc */
+.clearer {
+	clear: both;
+	font-size: 0;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+/* structure */
+.inner-container {
+	border: 2px solid #D7D7D2;
+	background: #FFF;
+	font-size: 1.2em;
+	margin: 0 auto;
+	padding: 10px;
+	width: 780px;
+}
+.outer-container {
+	background: url('images/container.jpg') no-repeat center bottom;
+	padding-bottom: 64px;
+}
+/* headere & title */
+.header {
+	background: #222 url('images/header.jpg') no-repeat;
+	height: 160px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+.header .title {
+	color: #FFF;
+	padding-top: 50px;
+}
+.header .title .sitename {
+	border-bottom: 1px dashed #657382;
+	color: #FFF;
+	font: normal 3em sans-serif;
+	padding-bottom: 2px;
+	text-decoration: none;
+}
+.header .title a:hover {
+	border-color: #F60;
+}
+.header .title .slogan {
+	font: normal 1.1em Verdana, sans-serif;
+	padding-top: 6px;
+}
+/* path */
+.path {
+	background: #949490;
+	color: #FFF;
+	font: normal 1.1em Verdana, sans-serif;
+	padding: 8px 12px;
+}
+.path a {
+	color: #FAFAFA;
+	text-decoration: none;
+}
+.path a:hover {
+	color: #FFE;
+	text-decoration: underline;
+}
+#s_path {
+	background: #949490;
+	color: #FFF;
+	font: normal 1.1em Verdana, sans-serif;
+	padding: 8px 12px;
+	text-align: center;
+	margin-top: 5px;
+}
+#s_path p {
+  padding: 0;
+}
+/* main */
+.main {
+	background: url('images/main.gif') repeat-y;
+	border-top: 4px solid #FFF;
+	padding: 8px 12px 0 0;
+}
+/* content */
+.content {
+	float: right;
+	width: 538px;
+}
+.content .descr {
+	color: #664;
+	font-size: 0.9em;
+	margin-bottom: 6px;
+}
+.content li {
+	margin-left: 18px;
+}
+.content p {
+	font-family: "Lucida Sans Unicode", Verdana, sans-serif;
+}
+/* navigation */
+.navigation {
+	float: left;
+	width: 210px;
+}
+.navigation h2 {
+	color: #5A5A43;
+	font: bold 1.1em Tahoma, Verdana,sans-serif;
+	line-height: 30px;
+	margin: 0;
+	padding-left: 12px;
+}
+.navigation ul {
+	padding: 0;
+	border-top: 1px solid #EAEADA;
+}
+.navigation li {
+	border-bottom: 1px solid #EAEADA;
+}
+.navigation li a {
+	font-size: 1.1em;
+	color: #554;
+	display: block;
+	padding: 8px 0 8px 5%;
+	text-decoration: none;
+	width: 95%;
+}
+.navigation li a:hover {
+	background: #F0F0EB;
+	color: #654;
+}
+/* Other */
+.profile {
+  padding:5px 5px 5px 12px;
+  font-size: 12px;
+  line-height: 30px;
+	color: #665544;
+	border-bottom: 1px solid #EAEADA;
+}
+.profile a {
+  color:#665544;
+  text-decoration: none;
+}
+.profile_image {
+  border:1px solid #949490;
+  padding:1px;
+}
+code.comment_admin {
+  background: #FFF;
+	border: 1px solid #EEE;
+	border-left: 6px solid #949490;
+	color: #666;
+	display: block;
+	font: normal 1em Tahoma, Verdana, sans-serif;
+	line-height: 1.6em;
+	margin-bottom: 12px;
+	padding: 8px 10px;
+}
+code.comment_visitor {
+  background: #FFF;
+	border: 1px solid #EEE;
+	border-left: 6px solid #E7E7E2;
+	color: #666;
+	display: block;
+	font: normal 1em Tahoma, Verdana, sans-serif;
+	line-height: 1.6em;
+	margin-bottom: 12px;
+	padding: 8px 10px;
+}
+.search_class {
+  border-top: 1px solid #EAEADA;
+  border-bottom: 1px solid #EAEADA;
+  margin-top: 4px;
+  padding: 12px 0px 12px 0px;
+}
+.page_numbers {
+  border-top: 1px solid #EAEADA;
+  border-bottom: 1px solid #EAEADA;
+  margin-top: 7px;
+  background-color: #FAFAFA;
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+}
+.system_message {
+  border: 1px solid #ABBECA;
+  margin: 7px 0px 10px 0px;
+  background-color: #FBFAF0;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 0px 10px 0px;
+}
+#bookmarks {
+  margin: 15px 5px 10px 2px;
+  text-align: left;
+}
+.bookmark_img {
+  padding:5px;
+  margin:1px;
+  border: 1px solid #ABBECA;
+}
+
+/* form */
+form {
+	margin: 2px 0px 2px 0px;
+	padding: 0px;
+}
+.form_area {
+  padding:10px;
+}
+label {
+	display: block;
+	font-weight: bold;
+	margin: 1px 0;
+}
+input {
+	padding: 5px;
+	border: 1px solid #949490;
+	font: normal 1em "Lucida Sans Unicode", Verdana,Arial,sans-serif;
+	color: #949490;
+}
+input.searchbox {
+  width:20%;
+  border:1px solid #181D21;
+}
+input.codebox {
+	width: 20%;
+}
+textarea {
+	width: 400px;
+	padding: 5px;
+	font: normal 1em "Lucida Sans Unicode", Verdana,Arial,sans-serif;
+	border: 1px solid #949490;
+	height: 100px;
+	display: block;
+	color: #949490;
+}
+input.button {
+	background-color: #949490;
+	border: solid 1px #5F6800;
+	font-weight: bold;
+	padding: 0.25em;
+	font-size: 1.0em;
+	color: #F2F2C5;
+	vertical-align: middle;
+}
+input.search_button {
+  border:0;
+  color: #555533;
+  background-color: #F7F7F2;
+	border: solid 1px #181D21;
+	padding:4px;
+}
+.friend_textarea {
+	height: 50px;
+	width: 80%;
+}
+#friend {
+  padding: 10px;
+  font-size: 1.2em;
+  font-family: "Lucida Sans Unicode", Verdana,Arial,sans-serif;
+}
+
+/* footer */
+.footer {
+	background: #949490;
+	color: #F7F7F2;
+	font: bold 1em sans-serif;
+	margin-top: 5px;
+	padding: 10px 12px;
+}
+.footer a {
+	color: #F7F7F2;
+	text-decoration: none;
+}
+.footer a:hover {
+	color: #FFC;
+}
+.error {
+	color: #949490;
+}

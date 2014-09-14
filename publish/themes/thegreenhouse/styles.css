@@ -1,0 +1,360 @@
+/*---------------------------------------------  
+  MAIAN WEBLOG v4+  
+  Written by David Ian Bennett  
+  E-Mail: support@maianscriptworld.co.uk  
+  Website: www.maianscriptworld.co.uk  
+  This File: CSS file for Green House Theme  
+  Designed By: Free CSS Templates
+  Website: http://www.freecsstemplates.org
+----------------------------------------------*/
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #749865 url('images/img01.gif') repeat-x;
+	font: normal small Arial, Helvetica, sans-serif;
+	line-height: 1.8em;
+	color: #838B91;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: normal;
+	color: #468259;
+}
+
+h2,#friend_head_message h1 {
+	padding-left: 20px;
+	background: url('images/img07.gif') no-repeat left center;
+	font-size: 22px;
+}
+
+h3 {
+	margin-bottom: 1em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: .9em;
+	font-weight: bold;
+}
+
+p, blockquote, ul, ol {
+	margin-top: 0;
+}
+
+blockquote {
+	padding: 0 0 0 40px;
+	background: url('images/img11.gif') no-repeat;
+	font: italic small Georgia, "Times New Roman", Times, serif;
+	line-height: 1.6em;
+}
+
+a {
+	background: url('images/img03.gif') repeat-x left bottom;
+	text-decoration: none;
+	color: #468259;
+}
+
+a:hover {
+	background: none;
+	text-decoration: underline;
+}
+
+/* Wrapper */
+
+#wrapper {
+	background: #FFFFFF url('images/img04.gif') repeat-x left bottom;
+}
+
+/* Menu */
+
+#menu {
+	width: 750px;
+	height: 60px;
+	margin: 0 auto;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#menu li {
+	display: block;
+	float: left;
+	width: 148px;
+	height: 60px;
+	padding: 0 0 0 2px;
+	background: url('images/img02.gif') no-repeat;
+}
+
+#menu a {
+	display: block;
+	width: 108px;
+	height: 36px;
+	padding: 20px 20px 0 20px;
+	background: none;
+	letter-spacing: -1px;
+	font: normal 1.6em Georgia, "Times New Roman", Times, serif;
+	color: #E1E9E2;
+}
+
+#menu a:hover {
+	border-bottom: 4px solid #5A7C50;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#menu .selected a {
+	background: #E1E9E2;
+	border-bottom: 4px solid #E1E9E2;
+	text-decoration: none;
+	color: #749865;
+}
+
+/* Header */
+
+#header {
+	width: 754px;
+	height: 247px;
+	margin: 0 auto;
+	padding: 13px 0 0 0;
+}
+
+#header h1 {
+	float: left;
+	width: 104px;
+	height: 200px;
+	padding: 20px 100px 0 20px;
+	background: url('images/img05.jpg') no-repeat;
+	line-height: 32px;
+	font-size: 14px;
+}
+
+#header h2 {
+	float: right;
+	width: 494px;
+	height: 34px;
+	padding: 180px 20px 0 0;
+	background: url('images/img06.jpg') no-repeat;
+	text-transform: lowercase;
+	text-align: right;
+	letter-spacing: -1px;
+	font-size: 22px;
+	color: #FFFFFF;
+}
+
+/* Form */
+
+form {
+	margin: 2px 0px 2px 0px;
+	padding: 0px;
+}
+label {
+	display: block;
+	font-weight: bold;
+	margin: 1px 0;
+}
+input {
+	padding: 5px;
+	border: 1px solid #C7D9CD;
+	font: normal 1em Verdana, Arial, Sans-serif;
+	color: #838B91;
+}
+input.codebox {
+	width: 20%;
+}
+textarea {
+	width: 400px;
+	padding: 5px;
+	font: normal 1em Verdana, Arial, Sans-serif;
+	border: 1px solid #C7D9CD;
+	height: 100px;
+	display: block;
+	color: #838B91;
+}
+input.searchbox {
+  width: 150px;
+  border:1px solid #86A579;
+  padding: 3px;
+  font-size: 12px;
+  color: #838B91;
+  background-color:#FFFFFF;
+}
+input.button {
+	margin: 0;
+	font: bolder 12px Verdana, Arial, Sans-serif;
+	border: 1px solid #86A579;
+	padding: 2px 3px;
+	background: #FFFFFF;
+	color: #275F6C;
+}
+
+/* Content */
+
+#content {
+	width: 750px;
+	margin: 0 auto;
+}
+
+/* Tell a Friend */
+
+#friend_header {
+  padding:5px;
+  background-color:#F0F0F0;
+}
+.friend_textarea {
+	height: 50px;
+	width: 80%;
+}
+#friend_head_message {
+  border: 1px solid #C7D9CD;
+  background-color:#FFFFFF;
+  padding: 3px;
+}
+
+/* Search */
+
+#search_class {
+  border-bottom: 1px dashed #C7D9CD;
+  margin-top: 5px;
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+	background-position: center right;
+	padding: 10px 0px 10px 0px;
+}
+
+/* Posts */
+
+#posts {
+	float: right;
+	width: 510px;
+}
+
+#posts .post {
+	padding-bottom: 30px;
+}
+
+#posts .story {
+	padding: 15px 20px 0 20px;
+	background: url('images/img10.gif') repeat-x
+}
+
+#posts .meta,#friend_head_message .meta {
+	padding: 5px 0 0 20px;
+	background: url('images/img03.gif') repeat-x;
+}
+
+#posts .meta p {
+	margin: 0;
+	line-height: normal;
+	font-size: smaller;
+}
+
+#posts ul {
+	list-style: url('images/img12.gif');
+}
+
+#posts ul li {
+}
+#page_numbers {
+  border-bottom: 1px dashed #C7D9CD;
+  margin-top: 10px;
+  background-color: #FFFFFF;
+  text-align: center;
+  padding-bottom: 5px;
+}
+#bookmarks {
+  margin: 15px 5px 5px 2px;
+  text-align: left;
+}
+.bookmark_img {
+  padding:5px;
+  margin:1px;
+  border: 1px solid #838B91;
+}
+.system_message {
+  border: 1px solid #838B91;
+  margin: 2px 0px 10px 0px;
+  background-color: #FFFFFF;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 0px 10px 0px;
+}
+
+/* Links */
+
+#links {
+	float: left;
+	width: 220px;
+}
+
+#links ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#links li ul {
+	padding: 15px 20px 30px 20px;
+	background: url('images/img10.gif') repeat-x
+}
+
+#links li li {
+	padding: 3px 0;
+	background: url('images/img03.gif') repeat-x left bottom;
+}
+
+#links li a {
+	background: none;
+}
+
+#links li i {
+	font-size: smaller;
+}
+.profile_image {
+  padding: 2px;
+  border: 1px solid #C7D9CD;
+  background-color: #FFFFFF;
+}
+
+/* Footer */
+
+#footer {
+	padding: 40px 0 60px 0;
+	background: url('images/img08.gif') repeat-x;
+}
+
+#footer p {
+	width: 750px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #A6C09B;
+}
+
+#footer a {
+	background: none;
+	font-weight: bold;
+	color: #A6C09B;
+}
+
+#legal {
+	margin: 0 auto;
+	text-align: right;
+	font-size: 12px;
+}
+
+#brand {
+	margin: -35px auto 0 auto;
+	padding: 10px 0 0 35px;
+	background: url('images/img09.gif') no-repeat left top;
+	letter-spacing: -1px;
+	font-size: 24px;
+}
+
+/* Error */
+
+.error {
+	color: #468259;
+}

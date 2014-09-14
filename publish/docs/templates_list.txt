@@ -1,0 +1,45 @@
+List of template files:
+=======================
+
+Below is a list of the system template files. For any theme, these files MUST be in place. Do not rename
+any of the files once they have been created. The system checks these files are in place and displays an error
+if any are missing if the 'CHECK_TEMPLATES' var is enabled. See the docs for more info.
+
+If you don`t need a file, create a blank file with the same name. This will act as a place holder.
+
+
+/themes/*theme/
+---------------
+
+archive.tpl.php  
+contact.tpl.php
+footer.tpl.php
+header.tpl.php
+index.tpl.php
+javascript.js
+print.tpl.php
+profile.tpl.php
+rss_style.css
+search.tpl.php
+styles.css
+tell_a_friend.tpl.php
+view_blog.tpl.php
+
+/themes/*theme/tpl_files/
+-------------------------
+
+adsense_code.tpl
+blog_post.tpl
+bookmarks.tpl
+captcha.tpl
+comments.tpl
+favourites.tpl
+no_search_results.tpl
+page_numbers.tpl
+print_blog_post.tpl
+profile.tpl
+reply_box.tpl
+search_results.tpl
+search_results_header.tpl
+single_blog_post.tpl
+system_message.tpl

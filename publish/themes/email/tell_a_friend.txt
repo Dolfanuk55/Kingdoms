@@ -1,0 +1,18 @@
+Hi {FRIEND},
+
+{VISITOR} recommends you check out the following blog posted at {WEBSITE}.
+
+------------------------------------------------------------
+{BLOGTITLE}
+{BLOGURL}
+------------------------------------------------------------
+
+{VISITOR} included the following comments:
+
+{COMMENTS}
+
+----------------------------
+
+Kind regards,
+{WEBSITE}
+{WEBSITE_URL}

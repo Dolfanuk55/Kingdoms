@@ -1,0 +1,503 @@
+/*---------------------------------------------
+  MAIAN WEBLOG v4+
+  Written by David Ian Bennett
+  E-Mail: support@maianscriptworld.co.uk
+  Website: www.maianscriptworld.co.uk
+  This File: CSS file for Standard Theme
+ ----------------------------------------------*/
+
+/********************************************   
+  HTML - Body/HTML controls
+ ********************************************/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #F2F2F2;
+	font: normal 70%/1.5em Verdana, Arial, Sans-serif;
+	color: #333333;
+	text-align: center;
+	background-image: url('images/page_bg.jpg');
+	background-attachment: fixed;
+}
+
+/********************************************   
+  LINKS - General link attributes
+ ********************************************/
+
+a:link {
+	background: inherit;
+	text-decoration: none;
+	color: #667F99;
+}
+a:visited {
+	background: inherit;
+	text-decoration: none;
+	color: #667F99;
+}
+a:active {
+	background: inherit;
+	text-decoration: none;
+	color: #667F99;
+}
+a:hover {
+	background: inherit;
+	color: #996800;
+}
+a.postLinks:link,a.postLinks:visited,a.postLinks:active,a.postLinks:hover {
+  border-bottom: 1px dashed #667F99;
+}
+
+/********************************************   
+  HEADERS - Header attributes
+ ********************************************/
+
+h1, h2, h3 {
+	font-family: Verdana, Arial, Sans-serif;
+	font-weight: Bold;
+}
+h1 {
+	font-size: 120%;
+}
+h2 {
+	font-size: 110%;
+	text-transform: uppercase;
+}
+h3 {
+	font-size: 110%;
+	color: #007E80;
+}
+h1, h2, h3, p {
+	margin: 0;
+	padding: 10px;
+}
+ul, ol {
+	margin: 10px 20px;
+	padding: 0 20px;
+}
+
+/********************************************   
+  IMAGES - Image attributes
+ ********************************************/
+
+img {
+	border: 2px solid #CCCCCC;
+}
+img.float-right {
+	margin: 5px 0px 5px 10px;
+}
+img.float-left {
+	margin: 5px 10px 5px 0px;
+}
+.bookmark_img {
+  padding:5px;
+  margin:2px;
+  border: 1px solid #B6B8BB;
+}
+
+/********************************************   
+  FORM - Form control attributes
+ ********************************************/
+
+form {
+	margin: 2px 0px 2px 0px;
+	padding: 0px;
+	border: 1px solid #f2f2f2;
+	background-color: #FAFAFA;
+}
+label {
+	display: block;
+	font-weight: bold;
+	margin: 1px 0;
+}
+input {
+	padding: 5px;
+	border: 1px solid #EEEEEE;
+	font: normal 1em Verdana, Arial, Sans-serif;
+	color: #777777;
+}
+input.codebox {
+	width: 20%;
+}
+input.searchbox {
+  width: 85%;
+}
+textarea {
+	width: 400px;
+	padding: 5px;
+	font: normal 1em Verdana, Arial, Sans-serif;
+	border: 1px solid #EEEEEE;
+	height: 100px;
+	display: block;
+	color: #777777;
+}
+input.button {
+	margin: 0;
+	font: bolder 12px Verdana, Arial, Sans-serif;
+	border: 1px solid #CCCCCC;
+	padding: 2px 3px;
+	background: #FFFFFF;
+	color: #275F6C;
+}
+
+/********************************************   
+  LAYOUT - Controls Main Layout Divs
+ ********************************************/
+
+#wrap {
+	width: 833px;
+	background: url('images/bg.jpg') repeat-y center top;
+	margin: 0 auto;
+	text-align: left;
+}
+#content-wrap {
+	position: relative;
+	width: 91%;
+	margin: 0 auto;
+	height: auto;
+	padding: 0;
+}
+#header {
+	position: relative;
+	width: 833px;
+	height: 100px;
+	background: #FFFFFF url('images/header.jpg') no-repeat center top;
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+#header h1#logo {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	font: bold 42px 'Trebuchet MS', Verdana, Arial, Sans-serif;
+	letter-spacing: -2px;
+	color: #FFFFFF;
+	text-transform: none;
+  top: 19px;
+	left: 53px;
+}
+#header h2#slogan {
+	position: absolute;
+	z-index: 9999999;
+	margin: 0;
+	padding: 0;
+	font: bold 14px 'Trebuchet MS', Verdana, Arial, Sans-serif;
+	text-transform: none;
+	color: #FFFFFF;
+  top: 65px;
+	left: 75px;
+}
+#date {
+margin: 0 30px 0 30px;
+color: #FFFFFF;
+background-color: #B7B8BC;
+text-align: right;
+}
+#bookmarks {
+  margin: 10px 5px 5px 10px;
+  text-align: left;
+}
+.bookmark_img {
+  padding:5px;
+  margin:1px;
+  border: 1px solid #B7B8BC;
+}
+
+/********************************************   
+  MENU - Menu attributes
+ ********************************************/
+
+#menu {
+	clear: both;
+	width: 833px;
+	height: 26px;
+	background: #FFFFFF url('images/menubg.jpg') repeat-y;
+	margin: 0;
+	font: bolder 12px/26px Verdana, Arial, Sans-serif;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0 0 0 35px;
+}
+#menu ul li {
+	float: left;
+	list-style: none;
+}
+#menu ul li a {
+	display: block;
+	text-decoration: none;
+	padding: 0 10px;
+	background: inherit;
+	color: #FFFFFF;
+}
+#menu ul li a:hover {
+	background: #FFFFFF;
+	color: #30899F;
+}
+#menu ul li#current a {
+	background: #30899F;
+	color: #FFFFFF;
+}
+
+/********************************************   
+  CONTENT - Controls content elements
+ ********************************************/
+
+#main {
+	float: left;
+	width: 73%;
+	padding: 0;
+	margin: 0;
+}
+#main h1 {
+	color: #667F99;
+	border-bottom: 2px solid #CCCCCC;
+	background: #F6F6F6 url('images/arrow.gif') no-repeat 5px 50%;
+	padding: 3px 0 3px 20px;
+	margin: 10px 0 0 0;
+}
+.last_updated {
+	background-color: #FAFAFA;
+	padding: 5px;
+	margin: 5px 10px 20px 10px;
+	border: 1px solid #f2f2f2;
+	font-size: 95%;
+}
+.post-footer {
+	background-color: #FAFAFA;
+	padding: 5px;
+	margin: 10px 10px 0 10px;
+	border: 1px solid #f2f2f2;
+	font-size: 95%;
+}
+.post-footer .date {
+	background: url('images/clock.gif') no-repeat left center;
+	padding-left: 20px;
+	margin: 0 10px 0 5px;
+}
+.post-footer .comments {
+	background: url('images/comment.gif') no-repeat left center;
+	padding-left: 20px;
+	margin: 0 10px 0 5px;
+}
+.post-footer .print {
+	background: url('images/print.gif') no-repeat left center;
+	padding-left: 20px;
+	margin: 0 10px 0 5px;
+}
+.post-footer .readmore {
+	background: url('images/page.gif') no-repeat left center;
+	padding-left: 20px;
+	margin: 0 10px 0 5px;
+}
+.profile {
+  margin: 2px 0px 2px 0px;
+	padding: 5px;
+	border: 1px solid #f2f2f2;
+	background-color: #FAFAFA;
+}
+.profile_image {
+  padding: 2px;
+  border: 1px solid #CCCCCC;
+}
+p.comment_admin {
+  border: 1px solid #B6B8BB;
+  margin-top: 2px;
+  background-color: #F6F6F6;
+}
+p.comment_visitor {
+  border: 1px solid #F2F2F2;
+  margin-top: 2px;
+  background-color: #FFFFFF;
+}
+.comment_date {
+  background: url('images/clock.gif') no-repeat left center;
+	padding-left: 20px;
+	margin: 0 10px 0 5px;
+}
+p.system_message {
+  border: 1px solid #B6B8BB;
+  margin: 2px 0px 10px 0px;
+  background-color: #F6F6F6;
+  text-align: center;
+  font-weight: bold;
+}
+p.search_class {
+  border: 1px solid #F2F2F2;
+  margin-top: 2px;
+  background-color: #FAFAFA;
+  background-image: url('images/search_result.gif');
+	background-repeat: no-repeat;
+	background-position: center right;
+}
+p.search_class a {
+  background: none;
+}
+p.favourites {
+  border: 1px solid #F2F2F2;
+  margin-top: 2px;
+  background-color: #FAFAFA;
+}
+p.page_numbers {
+  border: 1px solid #F2F2F2;
+  margin-top: 2px;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+/************************************************************** 
+  PRINT/FRIEND - Printer friendly/tell a friend elements
+ **************************************************************/
+ 
+#print_main {
+  width: 98%;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+} 
+#print_wrapper {
+  border: 1px solid #F2F2F2;
+  padding: 5px;
+  text-align: left;
+}
+#friend_wrapper {
+  padding: 1px;
+  text-align: left;
+}
+#friend_message {
+  border: 1px solid #F2F2F2;
+  padding: 5px;
+  text-align: left;
+}
+.friend_textarea {
+  height: 50px;
+  width: 80%;
+}
+#friend_sidebar h1 {
+	margin: 1px;
+	padding: 3px 10px;
+	font: bold 120% Verdana, Arial, Sans-serif;
+	color: #FFFFFF;
+	background-color: #B6B8BB;
+	text-align: left;
+}
+h1.sidebar_friend {
+  border: 1px solid #2E8095;
+  background-image: url('images/friend.gif');
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+
+/********************************************   
+  SIDEBAR - Sidebar attributes
+ ********************************************/
+
+#sidebar {
+	float: right;
+	width: 26%;
+	padding: 0;
+	margin: 0;
+}
+#sidebar h1 {
+	margin: 10px 0 0 0;
+	padding: 3px 10px;
+	font: bold 120% Verdana, Arial, Sans-serif;
+	color: #FFFFFF;
+	background-color: #B6B8BB;
+}
+#sidebar ul.sidemenu {
+	list-style: none;
+	text-align: left;
+	margin: 3px 0px 8px 0;
+	padding: 0;
+	text-decoration: none;
+}
+#sidebar ul.sidemenu li {
+	border-bottom: 1px solid #EFF0F1;
+	background: url('images/bullet.gif') no-repeat 2px 3px;
+	padding: 2px 0 2px 25px;
+	margin: 0 2px;
+}
+h1.sidebar_profile {
+  border: 1px solid #2E8095;
+  background-image: url('images/profile.gif');
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+h1.sidebar_search {
+  border: 1px solid #2E8095;
+  background-image: url('images/search.gif');
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+h1.sidebar_archive {
+  border: 1px solid #2E8095;
+  background-image: url('images/archive.gif');
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+h1.sidebar_adsense {
+  border: 1px solid #2E8095;
+  background-image: url('images/adsense.gif');
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+h1.sidebar_favourites {
+  border: 1px solid #2E8095;
+  background-image: url('images/favourites.gif');
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+* html body #sidebar ul.sidemenu li {
+	height: 1%;
+}
+#sidebar ul.sidemenu a {
+	font-weight: bold;
+	padding: 2px 0;
+	background: none;
+}
+p.adsense {
+  text-align: center;
+}
+
+/********************************************   
+  FOOTER - Footer/Other attributes
+ ********************************************/
+
+#footer {
+	clear: both;
+	color: #66737B;
+	font: normal 90% Verdana, Arial, Sans-serif;
+	background: #FFFFFF url('images/footerbg.jpg') no-repeat center top;
+	width: 833px;
+	height: 60px;
+	text-align: center;
+	padding: 8px 0 0 0;
+	margin: 0 auto;
+}
+#footer a {
+	text-decoration: none;
+}
+.float-left {
+	float: left;
+}
+.float-right {
+	float: right;
+}
+.align-left {
+	text-align: left;
+}
+.align-right {
+	text-align: right;
+}
+.clear {
+	clear: both;
+}
+.error {
+	color: #B7B8BC;
+}
